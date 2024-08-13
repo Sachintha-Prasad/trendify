@@ -1,19 +1,23 @@
-import { MdOutlineShoppingBag } from "react-icons/md"
-import { Link } from "react-router-dom"
+import { MdOutlineShoppingBag } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <nav className="bg-gray-900 h-[75px] py-4 relative">
-            <div className="container top-[24px] left-1/2 -translate-x-1/2 flex items-center justify-between fixed">
-                <Link to="/">
-                    <p className="text-xl font-medium text-white">Trendify</p>
-                </Link>
-                <Link to="/cart" className="relative">
-                    <MdOutlineShoppingBag className="text-2xl text-white" />
-                    <div className="absolute top-full translate-x-[12px] ring-2 ring-gray-900 -translate-y-[8px] rounded-full p-2 bg-yellow-400 text-black h-3 w-3 flex items-center justify-center text-[12px]">
-                        <p>3</p>
-                    </div>
-                </Link>
+        <nav className="mb-6 flex h-[75px] w-full">
+            <div className="fixed flex h-[75px] w-full items-center justify-center bg-gray-900">
+                <div className="container flex items-center justify-between">
+                    <Link to="/">
+                        <p className="text-xl font-medium text-white">
+                            Trendify
+                        </p>
+                    </Link>
+                    <Link to="/cart" className="relative">
+                        <MdOutlineShoppingBag className="text-2xl text-white" />
+                        <div className="absolute top-full flex h-3 w-3 -translate-y-[8px] translate-x-[12px] items-center justify-center rounded-full bg-yellow-400 p-2 text-[12px] text-black ring-2 ring-gray-900">
+                            <p>3</p>
+                        </div>
+                    </Link>
+                </div>
             </div>
         </nav>
     )
