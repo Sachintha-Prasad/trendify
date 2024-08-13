@@ -2,11 +2,11 @@ import {
     createBrowserRouter,
     createRoutesFromElements,
     Route,
-    RouterProvider
-} from "react-router-dom"
-import MainLayout from "./layouts/MainLayout"
-import Home from "./pages/Home"
-import Cart from "./pages/Cart"
+    RouterProvider,
+} from 'react-router-dom'
+import MainLayout from './layouts/MainLayout'
+import Home from './pages/Home'
+import Cart from './pages/Cart'
 
 const App = () => {
     const router = createBrowserRouter(
@@ -16,8 +16,8 @@ const App = () => {
                     <Route index element={<Home />} />
                     <Route path="/cart" element={<Cart />} />
                 </Route>
-            </Route>
-        )
+            </Route>,
+        ),
     )
 
     return <RouterProvider router={router} />
