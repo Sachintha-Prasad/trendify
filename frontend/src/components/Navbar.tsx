@@ -13,7 +13,7 @@ const Navbar = () => {
                     </Link>
                     <Link to="/cart" className="relative">
                         <MdOutlineShoppingBag className="text-2xl text-white" />
-                        <div className="absolute top-full flex h-3 w-3 -translate-y-[8px] translate-x-[12px] items-center justify-center rounded-full bg-yellow-400 p-2 text-[12px] text-black ring-2 ring-gray-900">
+                        <div className="absolute top-full flex h-3 w-3 -translate-y-[8px] translate-x-[12px] items-center justify-center rounded-full bg-yellow-400 p-2 text-[12px] text-gray-900 ring-2 ring-gray-900">
                             <p>3</p>
                         </div>
                     </Link>
